@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-src/App.js
 __pycache__
 app/__pycahe__
 /.pnp
