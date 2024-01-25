@@ -1,0 +1,121 @@
+.background {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.find_pw_area {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 38vw;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 21% auto 7%;
+  width: 75%;
+}
+
+.main_logo {
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+.title_area div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1em;
+  padding: 2% 15%;
+  color: #b3b3b3;
+  white-space: nowrap;
+  border-bottom: 2px #e5e5e5 solid;
+  cursor: pointer;
+}
+.title_area div:nth-child(2) {
+  border-bottom: 2px #2270eb solid;
+  margin: 0 auto;
+}
+.title_area div:nth-child(2) span {
+  color: #2170eb;
+  font-weight: bold;
+}
+/* .title_area div {
+	  font-size: 1em;
+	 padding: 2% 15%;
+	  color: #b3b3b3;
+	  border-bottom: 2px #e5e5e5 solid;
+	  cursor: pointer;
+  }
+  .title_area div:nth-child(2) {
+	  color: #2170eb;
+	  border-bottom: 2px #2170eb solid;
+  } */
+
+.input_area {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 3% auto;
+}
+.input_area label {
+  margin: 3% 0;
+}
+.input_area input {
+  margin: 5px 0;
+  padding: 15px 15px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  outline: none;
+}
+.input_area input:focus {
+  border: solid 1px #2170eb;
+}
+.input_area button {
+  width: 100%;
+  margin: 3% 0;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.deactivateBtn {
+  background-color: #e5e5e5;
+  color: #919191;
+  cursor: no-drop;
+}
+.activateBtn {
+  background-color: #2170eb;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0 auto;
+  font-size: 14px;
+  color: red;
+}

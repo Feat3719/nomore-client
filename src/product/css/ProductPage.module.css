@@ -1,0 +1,40 @@
+.product_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product_box {
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.lista {
+	text-decoration: none;
+	color: inherit;
+}
+
+.product_image {
+	width: 90%;
+	height: auto;
+	object-fit: cover;
+}
+
+.product_name {
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.product_rating {
+	font-size: large;
+	font-weight: bold;
+	margin-top: 15px;
+	color: red;
+}
+
+.product_price {
+	margin-top: 15px;
+}

@@ -1,0 +1,175 @@
+.product-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* 모던한 폰트 적용 */
+  color: #333; /* 읽기 쉬운 색상 적용 */
+}
+
+.product {
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  border-radius: 8px; /* 모서리를 둥글게 */
+  overflow: hidden; /* 내용이 박스 밖으로 나가지 않도록 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 적용 */
+  background: #fff; /* 밝은 배경색 설정 */
+}
+
+.product-image-section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* 이미지가 비율을 유지하면서 채워지도록 */
+}
+
+.product-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* 내용을 균등하게 분포 */
+  padding: 20px;
+  flex-grow: 1; /* 나머지 공간을 채움 */
+}
+
+.product-name {
+  font-size: 2rem; /* 크고 뚜렷한 제목 폰트 */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #e44d26; /* 가격을 강조하는 색상 */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.product-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-specs-table th,
+.product-specs-table td {
+  padding: 12px 15px; /* 넉넉한 패딩 적용 */
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1; /* 가로 구분선만 적용 */
+}
+
+.product-specs-table th {
+  background-color: #fafafa;
+  font-weight: bold;
+}
+
+.product-specs-table td {
+  text-align: right;
+}
+
+.product-specs-table tr:last-child th,
+.product-specs-table tr:last-child td {
+  border-bottom: none; /* 마지막 행의 구분선 제거 */
+}
+
+/* 버튼 스타일링 */
+.product-actions {
+  display: flex;
+  justify-content: center; /* 버튼을 중앙에 정렬 */
+  padding: 20px;
+  gap: 10px; /* 버튼 사이의 간격 */
+}
+
+.buy-button,
+.cart-button {
+  padding: 12px 30px; /* 버튼 패딩을 조금 더 넉넉하게 */
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* 반응형을 위해 너비를 100%로 설정 */
+  max-width: 200px; /* 버튼의 최대 너비 설정 */
+}
+
+.buy-button {
+  background-color: #346aff; /* 구매 버튼 색상 변경 */
+}
+
+.buy-button:hover {
+  background-color: #86befa; /* 호버 시 색상 변경 */
+}
+
+.cart-button {
+  background-color: #40ac59; /* 장바구니 버튼 색상 변경 */
+}
+
+.cart-button:hover {
+  background-color: #9db3a3; /* 호버 시 색상 변경 */
+}
+
+/* 반응형 디자인을 위한 추가 스타일 */
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column; /* 모바일에서는 상품 이미지와 정보를 세로로 배치 */
+  }
+
+  .product-info-section {
+    order: -1; /* 모바일에서 정보 섹션을 이미지 위로 */
+  }
+
+  .product-specs-table th,
+  .product-specs-table td {
+    text-align: left; /* 모바일에서 텍스트 좌측 정렬 */
+  }
+
+  .buy-button,
+  .cart-button {
+    margin-bottom: 10px; /* 버튼간의 마진 추가 */
+  }
+}
+
+.prod-buy__quantity {
+  display: flex;
+  align-items: center;
+}
+
+.prod-quantity__form {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.prod-quantity__input {
+  border: none;
+  padding: 8px;
+  width: 50px;
+  text-align: center;
+}
+
+.prod-quantity__plus,
+.prod-quantity__minus {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.prod-quantity__plus:hover,
+.prod-quantity__minus:hover {
+  background-color: #e0e0e0;
+}
+
+.prod-quantity__plus:disabled,
+.prod-quantity__minus:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+

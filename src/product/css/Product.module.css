@@ -1,0 +1,49 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgbox {
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid lightgray;
+  transition-duration: 0.3s;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  color: black;
+}
+
+.Product .imgbox {
+  width: 200px;
+  height: auto;
+}
+
+.hovered {
+  background-color: #2170eb;
+  color: white;
+}
+.container {
+  width: 40vh; /* 이미지 크기 조정 */
+  height: 50vh;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* 부드러운 변환 효과 */
+}
+
+.container:hover img {
+  transform: scale(1.5); /* 호버 시 이미지 확대 */
+}
+.container:active img {
+  color: black;
+}

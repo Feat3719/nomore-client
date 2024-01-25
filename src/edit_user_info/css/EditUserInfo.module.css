@@ -1,0 +1,281 @@
+.background {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	background-color: #f5f5f5;
+}
+
+.header_area {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 65vw;
+	/* height: 100%; */
+	margin: 0 auto;
+	padding-top: 50px;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.logo_area {
+	width: 100%;
+	margin: 0;
+	padding: 25px 0;
+	display: flex;
+	background-color: white;
+	box-sizing: border-box;
+}
+.logo_area > div {
+	margin: 0 auto;
+	font-size: 3em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.main_area {
+	/* position: relative;
+	z-index: 1; */
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.title_area > div {
+	font-size: 2em;
+	font-weight: bold;
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+
+.edit_info_table {
+	width: 100%;
+	border-top: 2px solid #969696;
+}
+
+.edit_info_table tr {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	border-bottom: 1px solid #ddd;
+}
+.edit_info_table th:nth-child(1) {
+	flex: 1;
+	padding: 20px 0 20px 25px;
+	height: 100%;
+	background-color: #eef1f8;
+	border-right: 1px solid #ddd;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: left;
+	white-space: nowrap;
+}
+.edit_info_table td:nth-child(2) {
+	flex: 5;
+	padding: 0px 0 0px 25px;
+	height: 100%;
+	background-color: white;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+/* 이름, 이름 변경 영역 */
+.name_area {
+	display: flex;
+	flex-direction: row;
+}
+
+.name_area > div:first-child {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+/* 이름 */
+.show_name {
+	padding-right: 6px;
+}
+.name_update_btn:nth-child(2):hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.name_update_btn {
+	color: #787878;
+	font-size: 10px;
+}
+
+.input_name_area {
+	align-items: center;
+	margin-right: 10px;
+}
+.input_name_area > input {
+	width: 100px;
+	outline: none;
+	border: 0.5px solid black;
+	border-radius: 3px;
+	padding: 2px 4px;
+}
+.input_name_area > input:focus {
+	border: 1px solid #2170eb;
+}
+
+/* 생년월일 영역 */
+.select_birth_area {
+	display: flex;
+}
+
+/* 이메일 영역 */
+.email_area {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.email_area div:first-child {
+	margin-right: 10px;
+}
+
+.email_area input {
+	width: 200px;
+	padding: 2px 4px;
+	border: 0.5px solid black;
+	border-radius: 3px;
+	outline: none;
+}
+.email_area input:focus {
+	border: 1px solid #2170eb;
+}
+
+/* 전화번호 영역 */
+.phone_area {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.phone_area div:first-child {
+	margin-right: 10px;
+}
+.phone_area input {
+	width: 90px;
+	padding: 2px 4px;
+	border: 0.5px solid black;
+	border-radius: 3px;
+	outline: none;
+}
+.phone_area input:focus {
+	border: 1px solid #2170eb;
+}
+
+/* 주소 영역 */
+.address_area {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.address_area > div:first-child {
+	margin-right: 10px;
+}
+
+.address_area input {
+	width: 280px;
+	padding: 2px 4px;
+	border: .5px solid black;
+	border-radius: 3px;
+	outline: none;
+}
+.address_area input:focus {
+	border: 1px solid #2170eb;
+
+}
+
+/*  select 꾸미기 */
+.select_gender,
+.select_member_cnt,
+.select_birth_area select {
+	margin-right: 5px;
+	padding: 5px 7px 5px;
+	border: 1px solid #bfbfbf;
+	border-radius: 5px;
+	outline: none;
+	color: #787878;
+	font-size: 13px;
+}
+.select_gender select::-webkit-scrollbar,
+.select_member_cnt select::-webkit-scrollbar,
+.select_birth_area select::-webkit-scrollbar {
+	width: 10px;
+}
+.select_gender select::-webkit-scrollbar-thumb,
+.select_member_cnt select::-webkit-scrollbar-thumb,
+.select_birth_area select::-webkit-scrollbar-thumb {
+	background-color: #ddd;
+	border-radius: 3px;
+}
+.select_gender select::-webkit-scrollbar-track,
+.select_member_cnt select::-webkit-scrollbar-track,
+.select_birth_area select::-webkit-scrollbar-track {
+	background-color: #ebe9e9;
+	border-radius: 6px;
+}
+
+/* ~변경 버튼 종합 */
+.email_area button,
+.phone_area button,
+.address_area button {
+	margin-right: 10px;
+	font-size: 12px;
+	background-color: #eef1f8;
+	border: 1px solid #787878;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+/* 하단 확인 취소 버튼 영역 */
+.btn_area {
+	display: flex;
+	width: 100%;
+	margin: 20px auto;
+	justify-content: center;
+}
+
+.confirm_btn_area {
+	display: flex;
+	margin: 0 auto;
+	position: absolute;
+}
+
+.delete_account_area {
+	display: flex;
+	margin-left: auto;
+}
+
+.confirm_btn_area button,
+.delete_account_area button {
+	border: 0;
+	border-radius: 5px;
+	margin: 0 5px;
+	padding: 5px 15px;
+	cursor: pointer;
+	font-size: 12px;
+	outline: none;
+}
+.confirm_btn_area button:nth-child(1) {
+	background-color: #2170eb;
+	color: white;
+}
+.confirm_btn_area button:nth-child(2),
+.delete_account_area button {
+	border: 1px solid #ddd;
+}

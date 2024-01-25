@@ -1,0 +1,32 @@
+* {
+   box-sizing: border-box;
+}
+.headerBgr {
+   position: fixed;
+   top: 0;
+   width: 100%;
+	background-color: white;
+	height: 20vh;
+
+   -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+.header_area {
+   display: flex;
+   flex-direction: row;
+	height: 100%;
+   width: 100%;
+	margin: auto;
+	padding: 3%;
+}
+
+.main_logo_area {
+   font-size: 3em;
+   font-weight: bold;
+   margin: auto 70% auto 0;
+   cursor: pointer;
+}
