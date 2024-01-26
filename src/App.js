@@ -7,8 +7,6 @@ import SignUp from "./signup/SignUp.jsx";
 import FindId from "./find_id/FindId";
 import FindPw from "./find_pw/FindPw";
 import axios from "axios";
-import UserCheck from "./edit_user_info/UserCheck.jsx";
-import EditUserInfo from "./edit_user_info/EditUserInfo.jsx";
 // import Data from "./data/Data.jsx";
 import Productlist from "./productlist/Productlist.jsx";
 import MyOrder from "./my_order/MyOrder.jsx";
@@ -24,7 +22,8 @@ import { useLoading } from "./loading/useLoading";
 import CategoryNav from "./product/CategoryNav.jsx";
 
 // axios.defaults.baseURL = "http://43.200.226.40:8080";
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "http://15.164.218.70:8080";
+// axios.defaults.baseURL = "http://localhost:8080";
 
 function App() {
   const go_main = () => {
