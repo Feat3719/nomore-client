@@ -229,17 +229,18 @@
 }
 
 .PwdAlert {
-  font-size: 0.8;
+  font-size: 0.8rem;
   color: red;
 }
 .PwdCompelete {
-  font-size: 0.8;
+  font-size: 0.8rem;
   color: rgb(13, 201, 29);
 }
 .alertDiv {
   margin: 0.9rem;
+  display: none;
 }
 .emailComplete {
-	font-size: 0.8;
+	font-size: 0.8rem;
 	color: rgb(13, 201, 29);
   }
